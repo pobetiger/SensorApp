@@ -14,9 +14,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/btnCloseSensorDetail"
+                android:background="?android:attr/selectableItemBackground"
                 android:text="Back"
                 android:onClick="onClick_close"
                 />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/dividerVertical"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_alignParentTop="true"
+                />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/btnSetDelay"
+                android:text="Delay"
+                android:onClick="onClick_SetDelay"
+                />
+
         <EditText
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
@@ -24,24 +43,34 @@
                 android:text="1.00"
                 android:inputType="numberDecimal"
                 />
+
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:text="Seconds"
                 />
-        <Button
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/dividerVertical"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_alignParentTop="true"
+            />
+        <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/btnSetDelay"
-                android:text="Delay"
-                android:onClick="onClick_SetDelay"
+                android:text="Rolling Avg."
+                android:id="@+id/cbxRollingAvg"
                 />
-        <Button
+        <!--<Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
                 android:id="@+id/btnCaptureMode"
-                android:text="Cap. Mode"
-                />
+                android:text="Rolling Avg."
+                />-->
     </LinearLayout>
 
     <ScrollView

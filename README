@@ -1,1 +1,14 @@
+
+NAME: SENSOR APP
+AUTHOR: BEN SUNG HSU
+
+DESCRIPTION:
+
+This project is my first try with interfacing and detecting all the Sensors Available on an android phone.
+It should provide a list of available sensors and a small investigator activity to preview the values on a particular
+sensor in selected by the user. The program contains simple basic activity switching mechanism. The program should also
+contain a method of displaying the data at a more human consumable rate. The program should also provide a
+method of plotting of the sensor values.
+
+DEVELOPMENT PLATFORM:
 This file was created by Android Studio (I/O Preview) AI-130.687321 for binding GitHub repository

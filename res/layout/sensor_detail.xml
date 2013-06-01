@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/detail_layout_top">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCloseSensorDetail"
+                android:text="Back"
+                android:onClick="onClick_close"
+                />
+        <EditText
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/txtDelay"
+                android:text="1.00"
+                android:inputType="numberDecimal"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Seconds"
+                />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnSetDelay"
+                android:text="Delay"
+                android:onClick="onClick_SetDelay"
+                />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCaptureMode"
+                android:text="Cap. Mode"
+                />
+    </LinearLayout>
+
+    <ScrollView
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/txtMessage"
+                />
+    </ScrollView>
+
+</LinearLayout>
